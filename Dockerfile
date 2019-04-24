@@ -7,7 +7,12 @@ RUN apt-get -y install wget
 # Add script directory
 RUN mkdir /scripts
 
-# Copy Script to enable decoding
+# Copy script to enable decoding
+# This script uses someone elses work - all credit goes to:
+# https://gist.github.com/Xaero252/9f81593e4a5e6825c045686d685e2428
+# and
+# https://github.com/revr3nd/plex-nvdec/
+
 COPY nvdec_enable.sh /scripts/nvdec_enable.sh
 
 # Make script executable
