@@ -2,7 +2,7 @@
 plex_nvdec_url="https://raw.githubusercontent.com/revr3nd/plex-nvdec/master/plex-nvdec-patch.sh"
 
 # Change the variable below if you wish to edit which codecs are decoded:
-CODECS=("h264" "hevc" "mpeg2video" "mpeg4" "vc1" "vp8" "vp9")
+#CODECS=("h264" "hevc" "mpeg2video" "mpeg4" "vc1" "vp8" "vp9")
 
 # Turn the CODECS array into a string of arguments for the wrapper script:
 if [ "$CODECS" ]; then
