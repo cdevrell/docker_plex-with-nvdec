@@ -25,7 +25,6 @@ VOLUME /config /transcode
 EXPOSE 32400/tcp 3005/tcp 8324/tcp 32469/tcp 1900/udp 32410/udp 32412/udp 32413/udp 32414/udp
 
 # Example Usage
-# sudo docker build --no-cache -t plex-with-nvdec .
 # sudo docker run -d \
 #     --name plex \
 #     --restart=unless-stopped \
@@ -34,6 +33,5 @@ EXPOSE 32400/tcp 3005/tcp 8324/tcp 32469/tcp 1900/udp 32410/udp 32412/udp 32413/
 #     -v plex_db:/config \
 #     -v plex_logs:"/config/Library/Application Support/Plex Media Server/Logs" \
 #     -v /data/ssd/plex_transcode:/transcode \
-#     -v /data/nas/media/TV:/data/TV \
-#     -v /data/nas/media/Movies:/data/Movies \
-#     plex-with-nvdec
+#     -v /data/nas/media:/data/media \
+#     cdevrell/plex-with-nvdec
